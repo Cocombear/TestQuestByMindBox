@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,
+        ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+            a:link {
+                color: black;
+                text-decoration: none
+            }
+
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: green;
+                text-decoration: none;
+                opacity: 70%;
+            }
+
+            a:active {
+                color: black;
+                text-decoration: none;
+            }
+
+        body {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        header {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            height: 100px;
+            background-color: white;
+            color: whitesmoke;
+            border: 2px solid black;
+        }
+
+        #companyNameInHeader {
+            float: left;
+            padding-top: 35px;
+            padding-left: 25px;
+            font-size: 24px;
+        }
+
+        ul.nav {
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        ul.nav a:link {
+            display: block;
+            width: 5em;
+            padding-top: 42px;
+            padding-left: 20px;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+
+        ul.nav a:hover {
+            display: block;
+            width: 5em;
+            padding-top: 42px;
+            padding-left: 20px;
+            text-decoration: none;w
+            color: green;
+            text-align: center;
+        }
+       
+        .textHelper {
+            margin-top: 25px;
+            margin-left: 25px;
+            padding: 20px;
+            width: 180px;
+            height: 420px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+
+        .dataEntryField {
+            border: 2px solid green;
+            font-size: 14px;
+            border-radius: 4px;
+            color: black;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        }
+
+        #buttonsubmit {
+            height: 35px;
+            width: 180px;
+            background-color: white;
+            border: 2px solid green;
+            color: black;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .textAreaOfShape {
+            text-align: justify;
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 400px;
+            padding: 20px;
+            color: black;
+            font-size: 24px;
+            border: 3px solid green;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p id="companyNameInHeader"><a href="https://mindbox.ru/">Mind Box</a></p>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Вопросы</a></li>
+            <li><a href="#">О Нас</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="textHelper">
+            <form action="answer/other" method="post">
+                <p>Введите радиус:</p>
+                <input name="radius" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите первую сторону:</p>
+                <input name="firstSide" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите вторую сторону:</p>
+                <input name="secondSide" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите третью сторону:</p>
+                <input name="thirdSide" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите верхнее основание:</p>
+                <input name="firstTrapezBase" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите нижнее основание:</p>
+                <input name="secondTrapezBase" class="dataEntryField" type="number" value="0" />
+
+                <p>Введите высоту:</p>
+                <input name="height" class="dataEntryField" type="number" value="0" />
+
+                <input id="buttonsubmit" type="submit" value="Показать площадь" />
+            </form>
+        </div>
+    </main>
+</body>
+</html>
